@@ -1,12 +1,12 @@
 module.exports = {
 	development: {
-		db: 'mongodb://127.0.0.1/graphql',
+		db: 'mongodb://admin:pass@mongo:27017/graphql?authSource=admin',
 		app: {
 			name: 'graphql'
 		}
 	},
 	production: {
-		db: 'mongodb://127.0.0.1/graphql',
+		db: 'mongodb://admin:pass@mongo:27017/graphql?authSource=admin',
 		  app: {
             name: 'graphql'
         }

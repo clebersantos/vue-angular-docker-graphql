@@ -1,21 +1,19 @@
-const express = require('express');
+const express = require("express");
 const mongoose = require('./config/mongoose');
-const graphqlHTTP = require('express-graphql');
-const cors = require('cors');
+const graphqlHTTP = require("express-graphql");
+const cors = require("cors");
 const db = mongoose();
 const app = express();
 
 app.use('*', cors());
 
 const userSchema = require('./graphql/index').userSchema;
-
 app.use('/graphql', cors(), graphqlHTTP({
-	schema, userSchema,
-	rootValue: global,
-	graphiql: true
+  schema: userSchema,
+  rootValue: global,
+  graphiql: true
 }));
 
 app.listen(process.env.PORT || 4000, () => {
-	console.log('O graphQL está rodando na porta 4000');
+  console.log('Running a GraphQL API server at localhost:4000/graphql');
 });
-
