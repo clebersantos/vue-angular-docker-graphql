@@ -62,7 +62,7 @@ import gql from 'graphql-tag'
 import USERS from '../graphql/Users.gql';
 import ADD_USER from '../graphql/AddUser.gql';
 import UPDATE_USER from '../graphql/UpdateUser.gql';
-import REMOVER_USER from '../graphql/RemoverUser.gql';
+import REMOVE_USER from '../graphql/RemoveUser.gql';
 
 export default {
   data: () => ({
@@ -112,7 +112,7 @@ export default {
     },
     deleteItem(item) {
       // eslint-disable-next-line
-      confirm('Tem certeza que deseja deletar o usuário?') && this.removerUser(item)
+      confirm('Tem certeza que deseja deletar o usuário?') && this.removeUser(item)
     },
     close() {
       this.dialog = false;
@@ -164,9 +164,9 @@ export default {
         console.error(error);
       });
     },
-    removerUser(item) {
+    removeUser(item) {
       this.$apollo.mutate({
-        mutation: REMOVER_USER,
+        mutation: REMOVE_USER,
         variables: {
           id: item.id,
         },

@@ -90,7 +90,7 @@ Removendo um usuário
 
 ```
 mutation {
-  removerUser(id: "5bdf30286b18dad75e8f0d16") {
+  removeUser(id: "5bdf30286b18dad75e8f0d16") {
     id
     name
   }
