@@ -1,0 +1,7 @@
+#import "./UserFragment.gql"
+
+mutation removerUser ($id: String!) {
+  removerUser (id: $id) {
+    ...user
+  }
+}

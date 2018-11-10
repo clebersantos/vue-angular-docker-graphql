@@ -1,0 +1,10 @@
+#import "./UserFragment.gql"
+
+mutation updateUser ($id: String!, $name: String!) {
+  updateUser(
+  	id: $id 
+  	name: $name
+  ) {
+    ...user
+  }
+}
