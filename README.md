@@ -1,5 +1,5 @@
 ### Cliente 1:
- - (Angular 5)[https://angular.io/]
+ - [Angular 5](https://angular.io/)
  - [Bootstrap 4](https://getbootstrap.com/)
  - [Apollo](https://www.apollographql.com/docs/angular/)
 
@@ -14,6 +14,7 @@
  - [Express JS](https://expressjs.com/) 
  - [Mongoose](https://mongoosejs.com/) 
  - [Mongo Express](https://github.com/mongo-express/mongo-express) 
+ - [MongoDB](https://www.mongodb.com/)
  - [GraphQL]https://graphql.org
 
 
