@@ -15,7 +15,7 @@
  - [Mongoose](https://mongoosejs.com/) 
  - [Mongo Express](https://github.com/mongo-express/mongo-express) 
  - [MongoDB](https://www.mongodb.com/)
- - [GraphQL]https://graphql.org
+ - [GraphQL](https://graphql.org)
 
 
 ## Para rodar:
